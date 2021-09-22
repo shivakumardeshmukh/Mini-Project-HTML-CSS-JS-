@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+        
+    </head>
+        <style type="text/css">
+            div{
+                 width: 500px;
+                 height: 500px;
+                 border: 1px solid red;
+                 margin: 0 auto;
+                 padding: 130px;
+                 box-sizing: border-box;
+                 background-color: rgb(93, 206, 200);
+        }
+        body {
+                background-image: url('./IPL_Logo.webp');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+        }
+        </style>
+    <body>
+        <center><h1>Well Come to IPL Login Page</h1></center>
+        <hr>
+        <div>
+             User Name:<br>
+             <input type="text" name="text" id="username">
+             <br><br>
+
+             Password:<br>
+             <input type="password" name="text" id="password">
+             <br><br>
+
+             <button onclick="login()">
+                 Submit
+             </button>
+        </div>
+    <script type="text/javascript">
+          function login()
+          {
+              var uname=document.getElementById('username').value;
+              var pass=document.getElementById('password').value;
+
+              if (uname=="Newton School" && pass=="12345")
+              {
+                  location.assign("file:///C:/Users/Lenovo/Desktop/new%20project/index.html#");
+              }
+              else
+              {
+                  window.alert("login faild");
+              }
+          }
+    
+    </script>
+    </body>
+</html>
